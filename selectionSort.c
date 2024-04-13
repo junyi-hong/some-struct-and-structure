@@ -1,3 +1,4 @@
+#include "swap.h"
 void selectionSort(int A[], int n) ;
 void selectionSort(int A[], int n) {
     int i, j;
@@ -16,6 +17,6 @@ void selectionSort(int A[], int n) {
         }
 
         /* put the smallest before others */
-        swap(&A[i], &A[min]);
+        swapint(&A[i], &A[min]);//swap
     }
 }

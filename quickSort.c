@@ -1,3 +1,4 @@
+#include "swap.h"
 int partition(int A[], int start, int end) ;
 void quickSort(int A[], int start, int end);
 int partition(int A[], int start, int end) {
@@ -11,13 +12,13 @@ int partition(int A[], int start, int end) {
     for(i = start; i < end; i++) {
 
         if (A[i] <= pivot) {
-            swap(&A[i], &A[pindex++]);
+            swapint(&A[i], &A[pindex++]);
         }
 
     }
 
     /* put pivot from the end to the right position (between smaller and bigger elements) */
-    swap(&A[pindex], &A[end]);
+    swapint(&A[pindex], &A[end]);
     
     return pindex;
 }
